@@ -15,5 +15,9 @@ public class City
     [JsonIgnore]
     [NotMapped]
     public int IdDepartment { get; set; }
-}
+
+    [JsonIgnore]
+    public Department Department { get; set; }
+
+    }
 }

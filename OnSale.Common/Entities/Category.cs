@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace OnSale.Common.Entities
 {
@@ -19,7 +17,7 @@ namespace OnSale.Common.Entities
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:44349/images/noimage.png"
+            ? $"https://onsaleeddy.azurewebsites.net/images/noimage.png"
             : $"https://onsaleeddy.blob.core.windows.net/categories/{ImageId}";
     }
 
