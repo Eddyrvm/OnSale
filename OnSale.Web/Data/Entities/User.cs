@@ -32,7 +32,7 @@ namespace OnSale.Web.Data.Entities
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://localhost:44349/images/noimage.png"
-            : $"https://onsaleeddy.blob.core.windows.net/user/{ImageId}";
+            : $"https://onsaleeddy.blob.core.windows.net/users/{ImageId}";
 
         [Display(Name = "User Type")]
         public UserType UserType { get; set; }
